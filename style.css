@@ -1,0 +1,3978 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #efefef;
+}
+
+/* NavBar */
+
+#logo_spotify{
+    position: relative;
+    left: 6%;
+    width:150px;
+}
+#itens{
+    position: relative;
+    left: -3%;
+}
+#f-1,#f-2,#f-3{
+    color: #ffffff;
+}
+#f-4,#f-5{
+    color:#ffffffbd;
+}
+#f-1:hover{
+    color: #1ed760;
+}
+#f-2:hover{
+    color: #1ed760;
+}
+#f-3:hover{
+    color: #1ed760;
+}
+#f-4:hover{
+    color: #1ed760;
+}
+#f-5:hover{
+    color: #1ed760;
+}
+
+
+/* menu lateral */
+
+.input-check{
+    display: none;
+}
+.button-check{
+    display: flex;
+    align-items: center;
+    width: 64px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+.button-check span::before,
+.button-check span::after,
+.button-check span{
+    background-color: #ffffff;
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    transition: 0.3s;
+    position: relative;
+    left: 0.5rem;
+    z-index: 100;
+}
+.button-check span::before,
+.button-check span::after{
+    content: "";
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+}
+
+.button-check span::before{
+    top: -23px;
+    left: 0px;
+    z-index: 100;
+}
+.button-check span::after{
+    top: -33px;
+    left: 0px;
+    z-index: 100;
+}
+.input-check:checked + .button-check span{
+    background-color: transparent;
+    z-index: 100;
+}
+.input-check:checked + .button-check span::before{
+    top: -13px;
+    transform: rotate(135deg);
+    z-index: 100;
+}
+.input-check:checked + .button-check span::after{
+    top: -36px;
+    transform: rotate(-135deg);
+    z-index: 100;
+}
+#menu-lateral {
+    position: fixed;
+    top: 0rem;
+    left: 29%;
+    margin-left: 74%;
+    width: 500px;
+    height: 100%;
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+    z-index: 3;
+}
+#conteudo-menuLa{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.Premium,.Suporte,.Baixar{
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+.Inscrever,.Entrar{
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    position: relative;
+    top: 4rem;
+    color: #919496;
+}
+.line-menuLA{
+    width: 30px;
+    height: 3px;
+    background-color: #919496;
+    position: relative;
+    top: 2rem;
+    left: -0.3rem;
+}
+#logo_spotifyMENU{
+    width: 100px;
+    position: relative;
+    top: 53rem;
+}
+
+.gradient{
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+     to top,
+     rgba(0, 0, 0, 0.100) 50%,
+     rgba(0, 0, 0, 0.100) 50%,
+     rgba(0, 0, 0, 0.100) 50%
+    ); 
+    height: 1200px ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+#menu-config ul li a {
+    transition: background 0.3s;
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+#menu-config ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+.effect1 {
+    transition: margin 0.4s;
+}
+
+/* Section 1 */
+
+#anuncio{
+    background-color: #1d75de;
+    height: 330px;
+}
+.conteudoAnuncio{
+    background-color: transparent;
+    width: 1000px;
+    height: 280px;
+    position: relative;
+    top: 2.5rem;
+    left: 7%;
+}
+#tittle-anuncio{
+    display: inline-block;
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+
+}
+#warning-anuncio{
+    display: inline-block;
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 23.5px;
+
+}
+.buttons{
+    position: relative;
+    top: 2rem;
+}
+#comecar{
+    padding: 12px;
+    width: 150px;
+    height: 55px;
+    background: rgb(29, 29, 29);
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#comecar:hover{
+    background-color: black;
+    transform: scale(1.06);
+}
+#ver-planos{
+    position: relative;
+    left: 0.5rem;
+    background: transparent;
+    padding: 12px;
+    width: 150px;
+    height: 55px;
+    border-radius: 40px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    outline: none;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#ver-planos:hover{
+    background: #1a69c7;
+    transform: scale(1.06);
+}
+#frase-an{
+    position: relative;
+    top: 4rem;
+    font-size: 11px;
+    color: #ffffff;    
+} 
+#link-frase-an{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Section 2 */
+
+#tittle-planos{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 33px;
+}
+#warning-planos{
+    text-align: center;
+    position: relative;
+    top: 55px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+#cartoes{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 40%;
+}
+#opcoes{
+    color: black;
+    text-decoration: underline;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 1px;
+    margin-left: 0.5rem;
+}
+#visa,#amex,#master,#elo,#hiper{
+    margin-left: 0.5rem;
+}
+
+/* Cards */
+
+#card-one{
+    width: 270px;
+    height: 840px;
+    position: relative;
+    left: 0%;
+    top: 65px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+}
+.list-1{
+    background-color:transparent;
+    width: 200px;
+    margin-left: 0.5rem;
+    list-style: none;
+    position: relative;
+    bottom: 1.5rem;
+}
+#card-part1-frase{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #0d72ea;
+    position: relative;
+    top: 15px;
+    left: 6%;
+    padding: 3px;
+    border-radius: 4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#card-part1-frase2{
+    display: inline-block;
+    color: #0d72ea;
+    background-color: transparent;
+    border: 1px solid #0d72ea;
+    padding: 3px 7px 3px 7px;
+    border-radius:4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    top: 10px;
+}
+#tittle-card-part1{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 5%;
+    top: 5px;
+}
+#card-part1-frase3{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 5%;
+    color: black;
+}
+#Conta1-card1{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 5%;
+    top: -15px;
+}
+#line-card1{
+    display: inline-block;
+    width: 230px;
+    height: 1.8px;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    top: -15px;
+    left: 20px; 
+}
+#icons-selecionado1{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top: 31px;
+}
+#card-part2-frase1{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 21%;
+    top: 2px;
+}
+#icons-selecionado2{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top: 0.1rem;
+}
+#card-part2-frase2{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 1.6rem;
+}
+#icons-selecionado3{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 1.7rem;
+}
+#card-part2-frase3{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 3.5rem;
+}
+#icons-selecionado4{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 3rem;
+}
+#card-part2-frase4{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 5rem;
+}
+#comecar1{
+    position: relative;
+    top: 0rem;
+    left: 5%;
+    padding: 0px;
+    width: 240px;
+    height: 50px;
+    background: rgb(29, 29, 29);
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#comecar1:hover{
+    background-color: black;
+    transform: scale(1.06);
+}
+.span-CardOne{
+    background-color: transparent;
+    width: 250px;
+    margin-left: 0.5rem;
+}
+#card-part2-frase5{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: 1rem;
+    left: 3%;
+    color: #535353;
+}
+#card-part2-frase5-a{
+    color: #535353;
+    text-decoration: underline;
+}
+
+
+#card-two{
+    width: 270px;
+    height: 840px;
+    position: relative;
+    left: 0%;
+    top: 65px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+}
+#cardTwo-part1-frase{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #0d72ea;
+    position: relative;
+    top: 15px;
+    left: 6%;
+    padding: 3px;
+    border-radius: 4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#cardTwo-part1-frase2{
+    display: inline-block;
+    color: #0d72ea;
+    background-color: transparent;
+    border: 1px solid #0d72ea;
+    padding: 3px 7px 3px 7px;
+    border-radius:4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    top: 10px;
+}
+#tittle-cardTwo-part1{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 5%;
+    top: 5px;
+}
+#cardTwo-part1-frase3{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 5%;
+    color: black;
+}
+#Conta1-card2{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 5%;
+    top: -15px;
+}
+#line-card2{
+    display: inline-block;
+    width: 230px;
+    height: 1.8px;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    top: -15px;
+    left: 20px; 
+}
+.list-2{
+    list-style: none;
+    background-color: transparent;
+    width: 200px;
+    margin-left: 0.5rem;
+    list-style: none;
+    position: relative;
+    bottom: 1.5rem;
+}
+#icons2-selecionado1{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top:  2rem;
+}
+#cardTwo-part2-frase1{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 2.5rem;
+    top: 0.5rem;
+}
+#icons2-selecionado2{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top: 0.8rem;
+}
+#cardTwo-part2-frase2{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 1rem;
+}
+#icons2-selecionado3{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 0.8rem;
+}
+#cardTwo-part2-frase3{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 2.5rem;
+}
+#comecar2{
+    position: relative;
+    top: 4rem;
+    left: 5%;
+    padding: 0px;
+    width: 240px;
+    height: 50px;
+    background: rgb(29, 29, 29);
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#comecar2:hover{
+    background-color: black;
+    transform: scale(1.06);
+}
+.span-CardTwo{
+    background-color: transparent;
+    width: 250px;
+    margin-left: 0.5rem;
+}
+#cardTwo-part2-frase5{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: 5rem;
+    left: 6%;
+    color: #535353;
+}
+#cardTwo-part2-frase5-a{
+    color: #535353;
+    text-decoration: underline;
+}
+
+
+#card-three{
+    width: 270px;
+    height: 840px;
+    position: relative;
+    left: 0%;
+    top: 65px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+}
+#cardthree-part1-frase{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #0d72ea;
+    position: relative;
+    top: 15px;
+    left: 6%;
+    padding: 3px;
+    border-radius: 4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#cardthree-part1-frase2{
+    display: inline-block;
+    color: #0d72ea;
+    background-color: transparent;
+    border: 1px solid #0d72ea;
+    padding: 3px 7px 3px 7px;
+    border-radius:4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    top: 10px;
+}
+#tittle-cardthree-part1{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 5%;
+    top: 5px;
+}
+#cardthree-part1-frase3{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 5%;
+    color: black;
+}
+#Conta1-card3{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 5%;
+    top: -15px;
+}
+#line-card3{
+    display: inline-block;
+    width: 230px;
+    height: 1.8px;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    top: -15px;
+    left: 20px; 
+}
+.list-3{
+    list-style: none;
+    background-color: transparent;
+    width: 200px;
+    margin-left: 0.5rem;
+    position: relative;
+    bottom: 1.5rem;
+}
+.lista-CardThree{
+    position: relative;
+    bottom: 1rem;
+}
+#icons3-selecionado1{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top: 2.5rem;
+}
+#cardthree-part2-frase1{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 2.5rem;
+    top: 2px;
+}
+#icons3-selecionado2{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 0.2rem;
+}
+#cardthree-part2-frase2{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 2rem;
+}
+#icons3-selecionado3{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 2rem;
+}
+#cardthree-part2-frase3{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 4.1rem;
+}
+#icons3-selecionado4{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 4rem;
+}
+#cardthree-part2-frase4{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 6rem;
+    font-size: 16px;
+}
+#icons3-selecionado5{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 6.5rem;
+}
+#cardthree-part2-frase5{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 8.3rem;
+}
+#comecar3{
+    position: relative;
+    bottom: 11.9rem;
+    left: 5%;
+    padding: 0px;
+    width: 240px;
+    height: 50px;
+    background: rgb(29, 29, 29);
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#comecar3:hover{
+    background-color: black;
+    transform: scale(1.06);
+}
+.span-CardThree{
+    background-color: transparent;
+    width: 250px;
+    margin-left: 0.5rem;
+}
+#cardthree-part2-frase6{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    position: relative;
+    bottom: 11rem;
+    left: 6%;
+    color: #535353;
+}
+#cardthree-part2-frase6-a{
+    color: #535353;
+    text-decoration: underline;
+}
+
+
+#card-four{
+    width: 270px;
+    height: 840px;
+    position: relative;
+    left: 0%;
+    top: 65px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+}
+#cardfour-part1-frase{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #0d72ea;
+    position: relative;
+    top: 15px;
+    left: 6%;
+    padding: 3px;
+    border-radius: 4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#cardfour-part1-frase2{
+    display: inline-block;
+    color: #0d72ea;
+    background-color: transparent;
+    border: 1px solid #0d72ea;
+    padding: 3px 7px 3px 7px;
+    border-radius:4px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    top: 10px;
+}
+#tittle-cardfour-part1{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 5%;
+    top: 5px;
+}
+#cardfour-part1-frase3{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 5%;
+    color: black;
+}
+#Conta1-card4{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 5%;
+    top: -15px;
+}
+#line-card4{
+    display: inline-block;
+    width: 230px;
+    height: 1.8px;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    top: -15px;
+    left: 20px; 
+}
+.list-4{
+    list-style: none;
+    background-color: transparent;
+    width: 200px;
+    margin-left: 0.5rem;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+#icons4-selecionado1{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top: 2rem;
+}
+#cardfour-part2-frase1{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    top: 0px;
+}
+#icons4-selecionado2{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    top: 0px;
+}
+#cardfour-part2-frase2{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 1.8rem;
+}
+#icons4-selecionado3{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 1.5rem;
+}
+#cardfour-part2-frase3{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 3.5rem;
+}
+#icons4-selecionado4{
+    width: 25px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 3rem;
+}
+#cardfour-part2-frase4{
+    display: inline-block;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    position: relative;
+    left: 20%;
+    bottom: 5rem;
+}
+#comecar4{
+    position: relative;
+    bottom: 1.8rem;
+    left: 5%;
+    padding: 0px;
+    width: 240px;
+    height: 50px;
+    background: rgb(29, 29, 29);
+    color: #ffffff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#comecar4:hover{
+    background-color: black;
+    transform: scale(1.06);
+}
+.span-CardFour{
+    background-color: transparent;
+    width: 240px;
+    margin-left: 0.5rem;
+    line-height: 19px;
+}
+#cardfour-part2-frase6{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    position: relative;
+    bottom: 1rem;
+    left: 4%;
+    color: #535353;
+}
+#cardfour-part2-frase6-a{
+    color: #535353;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    top: 150px;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+#footer-logo_spotify{
+    position: relative;
+    left: 6%;
+    top: 90px;
+}
+#coluna-1{
+    position: relative;
+    top: 110px;
+    left: 23%;
+    background-color: black;
+    width: 200px;
+    height: 300px;
+}
+#tittle-colu-1{
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #919496;
+    position: relative;
+    left: 6%;
+    top: 10px;
+}
+#footer-colu1-nav{
+    position: relative;
+    top: 30px;
+    left: 6%;
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    color: #dddddd;
+    cursor: pointer;
+}
+#footer-frase1:hover{
+    color: #1ed760;
+}
+#footer-frase2:hover{
+    color: #1ed760;
+}
+#footer-frase3:hover{
+    color: #1ed760;
+}
+#coluna-2{
+    position: relative;
+    top: 110px;
+    left: 23%;
+    background-color: black;
+    width: 200px;
+    height: 300px;
+}
+#tittle-colu-2{
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #919496;
+    position: relative;
+    left: 6%;
+    top: 10px;
+}
+#footer-colu2-nav{
+    position: relative;
+    top: 30px;
+    left: 6%;
+    color: #dddddd;
+    cursor: pointer;
+}
+#footer-frase4:hover{
+    color: #1ed760;
+}
+#footer-frase5:hover{
+    color: #1ed760;
+}
+#footer-frase6:hover{
+    color: #1ed760;
+}
+#footer-frase7:hover{
+    color: #1ed760;
+}
+#footer-frase8:hover{
+    color: #1ed760;
+}
+
+#coluna-3{
+    position: relative;
+    top: 110px;
+    left: 23%;
+    background-color: black;
+    width: 200px;
+    height: 300px;
+}
+#tittle-colu-3{
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #919496;
+    position: relative;
+    left: 6%;
+    top: 10px;
+}
+#footer-colu3-nav{
+    position: relative;
+    top: 30px;
+    left: 6%;
+    color: #dddddd;
+    cursor: pointer;
+}
+#footer-frase9:hover{
+    color: #1ed760;
+}
+#footer-frase10:hover{
+    color: #1ed760;
+}
+#footer-frase11:hover{
+    color: #1ed760;
+}
+#SVGS{
+    display: inline-block;
+    position: relative;
+    left: 80%;
+    bottom: 12.7rem;
+}
+#instagram-svg{
+    display: inline-block;
+    background-color: #222326;
+    padding: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#twitter-svg{
+    display: inline-block;
+    background-color: #222326;
+    padding: 13px;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#facebook-svg{
+    display: inline-block;
+    background-color: #222326;
+    padding: 13px;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#politicas > a{
+    display: inline-block;
+    color: #919496;
+    position: relative;
+    top: 150px;
+    left: 7%;
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+}
+#Legal,#CDP,#PDP,#cookies,#sobreA{
+    margin-left: 1rem;
+}
+#Legal:hover{
+    color: #1ed760;
+}
+#CDP:hover{
+    color: #1ed760;
+}
+#PDP:hover{
+    color: #1ed760;
+}
+#cookies:hover{
+    color: #1ed760;
+}
+#sobreA:hover{
+    color: #1ed760;
+}
+#cer-spo{
+    display: inline-block;
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    text-align: right;
+    color: #919496;
+    position: relative;
+    top: 128px;
+    left: 88%;
+}
+#Word-Brasil{
+    display: inline-block;
+    position: relative;
+    left: 80.7%;
+    top: 6rem;
+}
+#brasil{
+    display: inline-block;
+    color: #919496;
+    font-size: 12px;
+    font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+/* Responsividade */
+
+
+@media(max-width: 2755px) and (min-width: 2401px){
+    #logo_spotify{
+        position: relative;
+        left: 28%;
+    }
+    #itens{
+        position: relative;
+        left: -31%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 45%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 30%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70%;
+    }
+    #brasil{
+        position: relative;
+        top: 90px;
+        left: 68%;
+    }
+    #world{
+        position: relative;
+        left: 67.6%;
+        top: 90px;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 65%;
+        top: 0rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 2400px) and (min-width: 2168px){
+    #logo_spotify{
+        position: relative;
+        left: 28%;
+    }
+    #itens{
+        position: relative;
+        left: -25%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 30%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 2167px) and (min-width: 2161px){
+    #logo_spotify{
+        position: relative;
+        left: 28%;
+    }
+    #itens{
+        position: relative;
+        left: -25%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 25%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 2160px) and (min-width: 2001px){
+    #logo_spotify{
+        position: relative;
+        left: 28%;
+    }
+    #itens{
+        position: relative;
+        left: -25%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 25%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 43%;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 2000px) and (min-width: 1801px){
+    #logo_spotify{
+        position: relative;
+        left: 28%;
+    }
+    #itens{
+        position: relative;
+        left: -25%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 43%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 23%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1800px) and (min-width: 1611px){ 
+    #logo_spotify{
+        position: relative;
+        left: 28%;
+    }
+    #itens{
+        position: relative;
+        left: -21%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 43%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 20%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1610px) and (min-width: 1610px){
+    #logo_spotify{
+        position: relative;
+        left: 23%;
+    }
+    #itens{
+        position: relative;
+        left: -15%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 41%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 17%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70.8%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }  
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1609px) and (min-width: 1581px){
+    #logo_spotify{
+        position: relative;
+        left: 23%;
+    }
+    #itens{
+        position: relative;
+        left: -15%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 28.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 41%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 65%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 66%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 67%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 17%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 70.8%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1580px) and (min-width: 1460px){
+    #logo_spotify{
+        position: relative;
+        left: 23%;
+    }
+    #itens{
+        position: relative;
+        left: -15%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 24.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 41%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 71%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 72%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 73%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 14%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 77%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1459px) and (min-width: 1456px){
+    #logo_spotify{
+        position: relative;
+        left: 16%;
+    }
+    #itens{
+        position: relative;
+        left: -12%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 24.5%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 41%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 71%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 72%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 73%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 14%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 77%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1455px) and (min-width: 1301px){
+    #logo_spotify{
+        position: relative;
+        left: 16%;
+    }
+    #itens{
+        position: relative;
+        left: -12%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 18%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 41%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 71%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 72%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 73%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 14%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 77%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1300px) and (min-width: 1290px){
+    #logo_spotify{
+        position: relative;
+        left: 10%;
+    }
+    #itens{
+        position: relative;
+        left: -8%;
+    }
+    .conteudoAnuncio{
+        position: relative;
+        top: 2.5rem;
+        left: 12%;
+    }
+    #cartoes{
+        position: relative;
+        top: 40px;
+        left: 39%;
+    }
+    #instagram-svg{
+        position: relative;
+        left: 75%;
+        top: -180px;
+    }
+    #twitter-svg{
+        position: relative;
+        left: 76%;
+        top: -180px;
+    }
+    #facebook-svg{
+        position: relative;
+        left: 77%;
+        top: -180px;
+    }
+    #politicas > a{
+        position: relative;
+        top: 150px;
+        left: 8%;
+    }
+    #cer-spo{
+        position: relative;
+        top: 128px;
+        left: 82%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 66.3%;
+        top: 5.3rem;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 62%;
+        bottom: 2rem;
+    }
+}
+@media(max-width: 1199px){
+    #card-one{
+        width: 470px;
+        height: 500px;
+        position: relative;
+        left: 25%;
+    }
+    #card-part1-frase2{
+        position: relative;
+        left: 7%;
+        top: 15px;
+    }
+    #line-card1{
+        width: 400px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -2rem; 
+    }
+    .list-1{
+        background-color:transparent;
+        width: 350px;
+        margin-left: 2rem;
+        list-style: none;
+        position: relative;
+        top: 0.8rem;
+    }
+    #icons-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+    #card-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 4%;
+        top: 2px;
+    }
+    #icons-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0rem;
+    }
+    #card-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.8rem;
+        bottom: 1.6rem;
+    }
+    #icons-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2rem;
+    }
+    #card-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 5%;
+        bottom: 2rem;
+    }
+    #icons-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1.5rem;
+    }
+    #card-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 5%;
+        bottom: 1.5rem;
+    }
+    #comecar1{
+        position: relative;
+        top: -1rem;
+        left: 5%;
+        padding: 0px;
+        width: 410px;
+        height: 50px;
+    }
+    .span-CardOne{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 1.3rem;
+    }
+    #card-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -0.5rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-two{
+        width: 470px;
+        height: 470px;
+        position: relative;
+        left: 25%;
+        margin-top: 1rem;
+    }
+    #cardTwo-part1-frase2{
+        position: relative;
+        left: 7%;
+        top: 15px;
+    }
+    #line-card2{
+        width: 400px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -2.6rem; 
+    }
+    .list-2{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 2rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #icons2-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top:  0.5rem;
+    }
+    #cardTwo-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3rem;
+        top: -1rem;
+    }
+    #icons2-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: -1rem;
+    }
+    #cardTwo-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3rem;
+        bottom: 2.5rem;
+    }
+    #icons2-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2.6rem;
+    }
+    #cardTwo-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 1.2rem;
+        bottom: 2.5rem;
+    }
+    #comecar2{
+        position: relative;
+        top: -2rem;
+        left: 5%;
+        padding: 0px;
+        width: 410px;
+        height: 50px;
+    }
+    .span-CardTwo{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 1.3rem;
+    }
+    #cardTwo-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -1rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-three{
+        width: 470px;
+        height: 640px;
+        position: relative;
+        left: 25%;
+        margin-top: 1rem;
+    }
+    #cardthree-part1-frase2{
+        position: relative;
+        left: 7%;
+        top: 15px;
+    }
+    #line-card3{
+        width: 400px;
+        height: 1.8px;
+        position: relative;
+        bottom: 1rem;
+        left: 1.5rem; 
+    }
+    .list-3{
+        background-color:transparent;
+        width: 360px;
+        margin-left: 2rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #icons3-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0.7rem;
+    }
+    #cardthree-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3.5rem;
+        top: -0.8rem;
+    }
+    #icons3-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1rem;
+    }
+    #cardthree-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 1.7rem;
+        bottom: 1rem;
+    }
+    #icons3-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 0rem;
+    }
+    #cardthree-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3.5rem;
+        bottom: 1.7rem;
+    }
+    #icons3-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1.5rem;
+    }
+    #cardthree-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3.5rem;
+        bottom: 3.1rem;
+        font-size: 16px;
+    }
+    #icons3-selecionado5{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2.5rem;
+    }
+    #cardthree-part2-frase5{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 1.9rem;
+        bottom: 2.4rem;
+    }
+    #comecar3{
+        position: relative;
+        top: -3rem;
+        left: 5%;
+        padding: 0px;
+        width: 410px;
+        height: 50px;
+    }
+    .span-CardThree{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 1.3rem;
+    }
+    #cardthree-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -2rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-four{
+        width: 470px;
+        height: 600px;
+        position: relative;
+        left: 25%;
+        margin-top: 1rem;
+    }
+    #cardfour-part1-frase2{
+        position: relative;
+        left: 7%;
+        top: 15px;
+    }
+    #line-card4{
+        width: 400px;
+        height: 1.8px;
+        position: relative;
+        top: 0.1rem;
+        left: -2rem; 
+    }
+    .list-4{
+        background-color:transparent;
+        width: 360px;
+        margin-left: 2rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #icons4-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 1rem;
+    }
+    #cardfour-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3rem;
+        top: -0.6rem;
+    }
+    #icons4-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: -1rem;
+    }
+    #cardfour-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 1.3rem;
+        bottom: 1rem;
+    }
+    #icons4-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 0rem;
+    }
+    #cardfour-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3rem;
+        bottom: 1.9rem;
+    }
+    #icons4-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2rem;
+    }
+    #cardfour-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 1.4rem;
+        bottom: 2rem;
+    }
+    #comecar4{
+        position: relative;
+        top: -2rem;
+        left: 5%;
+        padding: 0px;
+        width: 410px;
+        height: 50px;
+    }
+    #comecar4:hover{
+        background-color: black;
+        transform: scale(1.06);
+    }
+    .span-CardFour{
+        background-color: transparent;
+        width: 400px;
+        margin-left: 1.2rem;
+        line-height: 19px;
+    }
+    #cardfour-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        bottom: 1rem;
+        left: 4%;
+        color: #535353;
+    }
+}
+@media(max-width: 1071px){
+    .conteudoAnuncio{
+        background-color: transparent;
+        width: 700px;
+        height: 280px;
+        position: relative;
+        top: 2.5rem;
+        left: 7%;
+    }
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 36%;
+    }
+}
+@media(max-width: 900px) {
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 33%;
+    }
+    #card-one{
+        width: 470px;
+        height: 500px;
+        position: relative;
+        left: 15%;
+    }
+    #card-two{
+        width: 470px;
+        height: 500px;
+        position: relative;
+        left: 15%;
+    }
+    #card-three{
+        width: 470px;
+        height: 640px;
+        position: relative;
+        left: 15%;
+        margin-top: 1rem;
+    }
+    #card-four{
+        width: 470px;
+        height: 600px;
+        position: relative;
+        left: 15%;
+        margin-top: 1rem;
+    }
+    #footer-logo_spotify{
+        position: relative;
+        left: 6%;
+        top: 3rem;
+    }
+    #Footer-lists{
+        position: relative;
+        left: -4rem;
+    }
+    #coluna-1{
+        position: relative;
+        top: 110px;
+        left: 23%;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #coluna-2{
+        position: relative;
+        top: 110px;
+        left: 9rem;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #coluna-3{
+        position: relative;
+        top: 110px;
+        left: 18rem;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 72%;
+        bottom: 18.9rem;
+    }
+    #politicas > a{
+        display: inline-block;
+        color: #919496;
+        position: relative;
+        top: 150px;
+        left: 3%;
+        font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    #cer-spo{
+        display: inline-block;
+        font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        text-align: right;
+        color: #919496;
+        position: relative;
+        top: 128px;
+        left: 80%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 70.5%;
+        top: 6rem;
+    }
+
+
+}
+@media(max-width: 746px){
+    #logo_spotify{
+        position: relative;
+        left: 3%;
+        width:100px;
+    }
+    #itens{
+        position: relative;
+        left: -3%;
+        font-size: 12px;
+    }
+    .conteudoAnuncio{
+        background-color: transparent;
+        width: 600px;
+        height: 280px;
+        position: relative;
+        top: 2.5rem;
+        left: 7%;
+    }
+    #tittle-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+    
+    }
+    #warning-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 19px;
+    
+    }
+    #frase-an{
+        position: relative;
+        top: 4rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 31%;
+    }
+    #card-one{
+        width: 470px;
+        height: 500px;
+        position: relative;
+        left: 4%;
+    }
+    #card-two{
+        width: 470px;
+        height: 500px;
+        position: relative;
+        left: 4%;
+    }
+    #card-three{
+        width: 470px;
+        height: 640px;
+        position: relative;
+        left: 4%;
+        margin-top: 1rem;
+    }
+    #card-four{
+        width: 470px;
+        height: 600px;
+        position: relative;
+        left: 4%;
+        margin-top: 1rem;
+    }
+}
+@media(max-width: 697px){
+    #footer-logo_spotify{
+        position: relative;
+        left: 6%;
+        top: 3rem;
+    }
+    #Footer-lists{
+        position: relative;
+        left: -4rem;
+    }
+    #coluna-1{
+        position: relative;
+        top: 110px;
+        left: 23%;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #coluna-2{
+        position: relative;
+        top: 110px;
+        left: 7rem;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #coluna-3{
+        position: relative;
+        top: 110px;
+        left: 15rem;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 65%;
+        bottom: 18.9rem;
+    }
+    #politicas{
+        max-width: 400px;
+    }
+    #politicas > a{
+        display: inline-block;
+        color: #919496;
+        position: relative;
+        top: 8rem;
+        left: 3%;
+        font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    #Legal,#CDP,#PDP,#cookies,#sobreA{
+        margin-left: 1rem;
+    }
+
+    #cer-spo{
+        display: inline-block;
+        font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        text-align: right;
+        color: #919496;
+        position: relative;
+        top: 5rem;
+        left: 80%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 68%;
+        top: 3rem;
+    }
+
+}
+@media(max-width: 633px){
+    .conteudoAnuncio{
+        background-color: transparent;
+        width: 550px;
+        height: 280px;
+        position: relative;
+        top: 2.5rem;
+        left: 3%;
+    }
+}
+@media(max-width: 575px){
+    #itens{
+        position: relative;
+        left: -3%;
+        display: none;
+    }
+    .menu-lateral{
+        position: absolute;
+        top: 0.1rem;
+        left: 87%;  
+    }
+    .button-check{
+        display: flex;
+        align-items: center;
+        width: 64px;
+        height: 60px;
+        border: none;
+        cursor: pointer;
+    }
+    footer{
+        position: relative;
+        top: 150px;
+        width: 100%;
+        height: 1250px;
+        background-color: black;
+    }
+    #footer-logo_spotify{
+        position: relative;
+        left: 5rem;
+        top: 3rem;
+    }
+    #coluna-1{
+        position: relative;
+        top: 110px;
+        left: 5rem;
+        background-color: black;
+        width: 150px;
+        height: 300px;
+    }
+    #coluna-2{
+        position: relative;
+        top: 2rem;
+        left: 5rem;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #coluna-3{
+        position: relative;
+        top: 2rem;
+        left: 5rem;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+    }
+    #SVGS{
+        display: inline-block;
+        position: relative;
+        left: 2rem;
+        top: 2.5rem;
+    }
+    #politicas{
+        max-width: 300px;
+    }
+    #cer-spo{
+        display: inline-block;
+        font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        text-align: right;
+        color: #919496;
+        position: relative;
+        top: 5rem;
+        left: 70%;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 54%;
+        top: 3rem;
+    }
+}
+@media(max-width: 568px){
+    #anuncio{
+        background-color: #1d75de;
+        height: 400px;
+    }
+    .conteudoAnuncio{
+        display: inline-block;
+        background-color: transparent;
+        width: 450px;
+        height: 280px;
+        position: relative;
+        top: 2.5rem;
+    }
+    #tittle-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 1rem;
+    }
+    #warning-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 19px;
+        margin-left: 1rem;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    #comecar{
+        position: relative;
+        bottom: 1rem;
+        left: 3rem;
+        padding: 12px;
+        width: 350px;
+        height: 55px;
+        background: rgb(29, 29, 29);
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #ver-planos{
+        position: relative;
+        left: 3rem;
+        background: transparent;
+        padding: 12px;
+        width: 350px;
+        height: 55px;
+        border-radius: 40px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+        outline: none;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 23%;
+    }
+    #tittle-planos{
+        text-align: center;
+        position: relative;
+        top: 60px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 29px;
+    }
+    #warning-planos{
+        text-align: center;
+        position: relative;
+        top: 55px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+    }
+}
+@media(max-width: 500px){
+    .conteudoAnuncio{
+        display: inline-block;
+        background-color: transparent;
+        width: 450px;
+        height: 280px;
+        position: relative;
+        top: 2.5rem;
+        left: 1%;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    .span-Anuncio{
+        background-color: transparent;
+        width: 400px;
+    }
+    #card-one{
+        width: 420px;
+        height: 500px;
+        position: relative;
+    }
+    #line-card1{
+        width: 350px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -2rem; 
+    }
+    .list-1{
+        background-color:transparent;
+        width: 350px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: 0.8rem;
+    }
+    #comecar1{
+        position: relative;
+        top: -1rem;
+        left: 5%;
+        padding: 0px;
+        width: 370px;
+        height: 50px;
+    }
+    .span-CardOne{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 1rem;
+    }
+    #card-two{
+        width: 420px;
+        height: 470px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #line-card2{
+        width: 350px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -2.6rem; 
+    }
+    .list-2{
+        background-color:transparent;
+        width: 350px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #comecar2{
+        position: relative;
+        top: -2.5rem;
+        left: 5%;
+        padding: 0px;
+        width: 370px;
+        height: 50px;
+    }
+    .span-CardTwo{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 1.3rem;
+    }
+    #cardTwo-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -1.8rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-three{
+        width: 420px;
+        height: 640px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #line-card3{
+        width: 350px;
+        height: 1.8px;
+        position: relative;
+        bottom: 1rem;
+        left: 1.5rem; 
+    }
+    .list-3{
+        background-color:transparent;
+        width: 340px;
+        margin-left: 1rem;
+        list-style: none;
+    }
+    #comecar3{
+        position: relative;
+        top: -3rem;
+        left: 5%;
+        padding: 0px;
+        width: 370px;
+        height: 50px;
+    }
+    .span-CardThree{
+        background-color:transparent;
+        width: 380px;
+        margin-left: 1.3rem;
+    }
+    #cardthree-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -2rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-four{
+        width: 420px;
+        height: 600px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #line-card4{
+        width: 350px;
+        height: 1.8px;
+        position: relative;
+        top: 0.1rem;
+        left: -2rem; 
+    }
+    .list-4{
+        background-color:transparent;
+        width: 340px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #comecar4{
+        position: relative;
+        top: -2rem;
+        left: 5%;
+        padding: 0px;
+        width: 370px;
+        height: 50px;
+    }
+    .span-CardFour{
+        background-color: transparent;
+        width: 370px;
+        margin-left: 0rem;
+        line-height: 19px;
+    }
+    #cardfour-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        bottom: 1rem;
+        left: 4%;
+        color: #535353;
+    }
+}
+@media(max-width: 450px){
+    .conteudoAnuncio{
+        display: inline-block;
+        background-color: transparent;
+        width: 400px;
+        height: 280px;
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+    }
+    #tittle-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 0rem;
+    }
+    #warning-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        margin-left: 0rem;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    #comecar{
+        position: relative;
+        bottom: 1rem;
+        left: 0rem;
+        padding: 12px;
+        width: 350px;
+        height: 55px;
+        background: rgb(29, 29, 29);
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #ver-planos{
+        position: relative;
+        left: 0rem;
+        background: transparent;
+        padding: 12px;
+        width: 350px;
+        height: 55px;
+        border-radius: 40px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+        outline: none;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    .menu-lateral{
+        position: absolute;
+        top: 0.1rem;
+        left: 84%;  
+    }
+    #menu-lateral {
+        position: fixed;
+        top: 0rem;
+        left: 0%;
+        margin-left: 100%;
+        width: 500px;
+        height: 100%;
+        background-color: black;
+        box-shadow: 1px 1px 5px black;
+        z-index: 3;
+    }
+    .span-Anuncio{
+        background-color: transparent;
+        width: 370px;
+    }
+    .Topo-planos{
+        background-color: transparent;
+        width: 300px;
+        margin-left: 4rem;
+    }
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 16%;
+    }
+    #tittle-planos{
+        text-align: center;
+        position: relative;
+        top: 60px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 29px;
+    }
+    #warning-planos{
+        text-align: center;
+        position: relative;
+        top: 55px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+    }
+    #card-one{
+        width: 370px;
+        height: 570px;
+        position: relative;
+    }
+    #card-part1-frase2{
+        position: relative;
+        left: 5%;
+        top: 6px;
+    }
+    #line-card1{
+        width: 300px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -2rem; 
+    }
+    .list-1{
+        background-color:transparent;
+        width: 300px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: 0.8rem;
+    }
+    #card-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 3rem;
+        bottom: 3.2rem;
+    }
+    #comecar1{
+        position: relative;
+        top: -2.5rem;
+        left: 5%;
+        padding: 0px;
+        width: 320px;
+        height: 50px;
+    }
+    .span-CardOne{
+        background-color:transparent;
+        width: 340px;
+        margin-left: 1rem;
+    }
+    #card-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -1.5rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-two{
+        width: 370px;
+        height: 570px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #cardTwo-part1-frase2{
+        position: relative;
+        left: 5.5%;
+        top: 8px;
+    }
+    #line-card2{
+        width: 300px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -3rem; 
+    }
+    .list-2{
+        background-color:transparent;
+        width: 300px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #cardTwo-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.9rem;
+        bottom: 4.2rem;
+    }
+    #comecar2{
+        position: relative;
+        top: -4rem;
+        left: 5%;
+        padding: 0px;
+        width: 320px;
+        height: 50px;
+    }
+    .span-CardTwo{
+        background-color:transparent;
+        width: 340px;
+        margin-left: 1.3rem;
+    }
+    #cardTwo-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -2.5rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-three{
+        width: 370px;
+        height: 700px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #cardthree-part1-frase2{
+        position: relative;
+        left: 5.5%;
+        top: 8px;
+    }
+    #line-card3{
+        width: 320px;
+        height: 1.8px;
+        position: relative;
+        bottom: 1rem;
+        left: 1.5rem; 
+    }
+    .list-3{
+        background-color:transparent;
+        width: 300px;
+        margin-left: 1rem;
+        list-style: none;
+    }
+    #icons3-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0.7rem;
+    }
+    #cardthree-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        top: -0.8rem;
+    }
+    #icons3-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1rem;
+    }
+    #cardthree-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 2.5rem;
+    }
+    #icons3-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1.5rem;
+    }
+    #cardthree-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 3.5rem;
+    }
+    #icons3-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2.5rem;
+    }
+    #cardthree-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 4.3rem;
+        font-size: 16px;
+    }
+    #icons3-selecionado5{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 3.5rem;
+    }
+    #cardthree-part2-frase5{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 5.4rem;
+    }
+    #comecar3{
+        position: relative;
+        top: -6.7rem;
+        left: 5%;
+        padding: 0px;
+        width: 320px;
+        height: 50px;
+    }
+    .span-CardThree{
+        background-color:transparent;
+        width: 320px;
+        margin-left: 1.3rem;
+    }
+    #cardthree-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -5.8rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-four{
+        width: 370px;
+        height: 680px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #cardfour-part1-frase2{
+        position: relative;
+        left: 5.5%;
+        top: 8px;
+    }
+    #line-card4{
+        width: 320px;
+        height: 1.8px;
+        position: relative;
+        top: -1rem;
+        left: 1rem; 
+    }
+    .list-4{
+        background-color:transparent;
+        width: 300px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: -1rem;
+    }
+    #comecar4{
+        position: relative;
+        top: -3rem;
+        left: 5%;
+        padding: 0px;
+        width: 320px;
+        height: 50px;
+    }
+    .span-CardFour{
+        background-color: transparent;
+        width: 350px;
+        margin-left: 0rem;
+        line-height: 19px;
+    }
+    #cardfour-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        bottom: 2rem;
+        left: 4%;
+        color: #535353;
+    }
+
+}
+@media(max-width: 420px){
+    .conteudoAnuncio{
+        display: inline-block;
+        background-color: transparent;
+        width: 400px;
+        height: 280px;
+        position: relative;
+        top: 2rem;
+        left: 0.5rem;
+    }
+}
+@media(max-width: 400px){
+    .conteudoAnuncio{
+        display: inline-block;
+        background-color: transparent;
+        width: 350px;
+        height: 280px;
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+    #tittle-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 0rem;
+    }
+    #warning-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        margin-left: 0rem;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    #comecar{
+        position: relative;
+        bottom: 1rem;
+        left: 0rem;
+        padding: 12px;
+        width: 350px;
+        height: 55px;
+        background: rgb(29, 29, 29);
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #ver-planos{
+        position: relative;
+        left: 0rem;
+        background: transparent;
+        padding: 12px;
+        width: 350px;
+        height: 55px;
+        border-radius: 40px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+        outline: none;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    .span-Anuncio{
+        background-color: transparent;
+        width: 320px;
+    }
+    .Topo-planos{
+        background-color: transparent;
+        width: 300px;
+        margin-left: 3rem;
+    }
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 14%;
+    }
+    #card-one{
+        width: 330px;
+        height: 590px;
+        position: relative;
+    }
+    #card-part1-frase2{
+        position: relative;
+        left: 5%;
+        top: 6px;
+    }
+    #line-card1{
+        width: 270px;
+        height: 1.8px;
+        position: relative;
+        top: 0px;
+        left: -2rem; 
+    }
+    .list-1{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: 0.8rem;
+    }
+    #icons-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+    #card-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 0.7rem;
+        top: 2px;
+    }
+    #icons-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0rem;
+    }
+    #card-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 1.6rem;
+    }
+    #icons-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2rem;
+    }
+    #card-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 3.5rem;
+    }
+    #icons-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 3.5rem;
+    }
+    #card-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 5rem;
+    }
+    #comecar1{
+        position: relative;
+        top: -4.5rem;
+        left: 8%;
+        padding: 0px;
+        width: 270px;
+        height: 50px;
+    }
+    .span-CardOne{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 1rem;
+    }
+    #card-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -3.5rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-two{
+        width: 330px;
+        height: 590px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #cardTwo-part1-frase2{
+        position: relative;
+        left: 4.5%;
+        top: 0.3rem;
+    }
+    #line-card2{
+        width: 270px;
+        height: 1.8px;
+        position: relative;
+        top: -1rem;
+        left: 1rem; 
+    }
+    .list-2{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 1rem;
+        list-style: none;
+        position: relative;
+        top: -1rem;
+    }
+    #icons2-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top:  0.5rem;
+    }
+    #cardTwo-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        top: -1rem;
+    }
+    #icons2-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: -1rem;
+    }
+    #cardTwo-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 2.5rem;
+    }
+    #icons2-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2.6rem;
+    }
+    #cardTwo-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 4.5rem;
+    }
+    #comecar2{
+        position: relative;
+        top: -5.5rem;
+        left: 8%;
+        padding: 0px;
+        width: 270px;
+        height: 50px;
+    }
+    .span-CardTwo{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 1.3rem;
+    }
+    #cardTwo-part2-frase5{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -4.5rem;
+        left: 3%;
+        color: #535353;
+    }
+     #card-three{
+        width: 330px;
+        height: 750px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #cardthree-part1-frase2{
+        position: relative;
+        left: 5.5%;
+        top: 8px;
+    }
+    #line-card3{
+        width: 270px;
+        height: 1.8px;
+        position: relative;
+        top: -1rem;
+        left: 1rem; 
+    }
+    .list-3{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 0.5rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #icons3-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 0.7rem;
+    }
+    #cardthree-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        top: -0.8rem;
+    }
+    #icons3-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1rem;
+    }
+    #cardthree-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 2.5rem;
+    }
+    #icons3-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 1.5rem;
+    }
+    #cardthree-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 3.5rem;
+    }
+    #icons3-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2.5rem;
+    }
+    #cardthree-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 4.3rem;
+        font-size: 16px;
+    }
+    #icons3-selecionado5{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 3.5rem;
+    }
+    #cardthree-part2-frase5{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 5.4rem;
+    }
+    #comecar3{
+        position: relative;
+        top: -7rem;
+        left: 8%;
+        padding: 0px;
+        width: 270px;
+        height: 50px;
+    }
+    .span-CardThree{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 1.3rem;
+    }
+    #cardthree-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -5.8rem;
+        left: 3%;
+        color: #535353;
+    }
+    #card-four{
+        width: 330px;
+        height: 700px;
+        position: relative;
+        margin-top: 1rem;
+    }
+    #cardfour-part1-frase2{
+        position: relative;
+        left: 6%;
+        top: 1;
+    }
+    #line-card4{
+        width: 270px;
+        height: 1.8px;
+        position: relative;
+        top: 0rem;
+        left: -2.5rem; 
+    }
+    .list-4{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 0.5rem;
+        list-style: none;
+        position: relative;
+        top: 0rem;
+    }
+    #icons4-selecionado1{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: 1rem;
+    }
+    #cardfour-part2-frase1{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        top: -0.6rem;
+    }
+    #icons4-selecionado2{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        top: -1rem;
+    }
+    #cardfour-part2-frase2{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 0.9rem;
+        bottom: 1rem;
+    }
+    #icons4-selecionado3{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 0rem;
+    }
+    #cardfour-part2-frase3{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 1.9rem;
+    }
+    #icons4-selecionado4{
+        width: 25px;
+        display: inline-block;
+        position: relative;
+        left: 0%;
+        bottom: 2rem;
+    }
+    #cardfour-part2-frase4{
+        display: inline-block;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        position: relative;
+        left: 2.5rem;
+        bottom: 3.5rem;
+    }
+    #comecar4{
+        position: relative;
+        top: -3rem;
+        left: 8%;
+        padding: 0px;
+        width: 270px;
+        height: 50px;
+    }
+    .span-CardFour{
+        background-color:transparent;
+        width: 270px;
+        margin-left: 1.3rem;
+    }
+    #cardfour-part2-frase6{
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        position: relative;
+        bottom: 2rem;
+        left: 4%;
+        color: #535353;
+    }
+
+
+}
+@media(max-width: 368px) and (min-width: 360px){
+    .menu-lateral{
+        position: absolute;
+        top: 0.1rem;
+        left: 81%;  
+    }
+    .conteudoAnuncio{
+        display: inline-block;
+        background-color: transparent;
+        width: 320px;
+        height: 280px;
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+    }
+    #tittle-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 27px;
+        margin-left: 0rem;
+    }
+    #warning-anuncio{
+        display: inline-block;
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        margin-left: 0rem;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    #comecar{
+        position: relative;
+        bottom: 1rem;
+        left: 0rem;
+        padding: 12px;
+        width: 270px;
+        height: 55px;
+        background: rgb(29, 29, 29);
+        color: #ffffff;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #ver-planos{
+        position: relative;
+        left: 0rem;
+        background: transparent;
+        padding: 12px;
+        width: 270px;
+        height: 55px;
+        border-radius: 40px;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+        outline: none;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #frase-an{
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+        font-size: 9px;
+        color: #ffffff;    
+    } 
+    .span-Anuncio{
+        background-color: transparent;
+        width: 300px;
+    }
+    .Topo-planos{
+        background-color: transparent;
+        width: 300px;
+        margin-left: 2rem;
+    }
+    #cartoes{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 10%;
+    }
+
+    #card-one{
+        width: 330px;
+        height: 590px;
+        position: relative;
+        left: -0px;
+    }
+    #card-two{
+        width: 330px;
+        height: 590px;
+        position: relative;
+        margin-top: 1rem;
+        left: -0px;
+    }
+     #card-three{
+        width: 330px;
+        height: 750px;
+        position: relative;
+        margin-top: 1rem;
+        left: -0px;
+    }
+    #card-four{
+        width: 330px;
+        height: 700px;
+        position: relative;
+        margin-top: 1rem;
+        left: -0px;
+    }
+    #politicas{
+        max-width: 150px;
+        position: relative;
+        bottom: 1rem;
+    }
+    #Word-Brasil{
+        display: inline-block;
+        position: relative;
+        left: 45%;
+        top: -0.5rem;
+    }
+    #cer-spo{
+        display: inline-block;
+        font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        text-align: right;
+        color: #919496;
+        position: relative;
+        top: 1rem;
+        left: 65%;
+    }
+}

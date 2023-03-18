@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asset/imagens/Favicon Spotify.png" />
+    <title>Spotify Premium</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light p-3" style="background: black;">
+            <img id="logo_spotify" src="asset/imagens/Spotify_Logo_RGB_White.png" alt="SPOTIFY" >
+           <ul class="nav justify-content-end" id="itens">
+            <li class="nav-item">
+              <a class="nav-link active" id="f-1" href="#">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="f-2" href="#">Suporte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="f-3" href="#">Baixar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" style="color:#ffffff;" href="#">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="f-4" href="#">Inscrever-se</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="f-5" href="#">Entrar</a>
+              </li>
+          </ul>
+        </nav>
+        <div class="menu-lateral">
+          <input 
+            type="checkbox"
+            id="input-check"
+            class="input-check"
+            onclick="animacao1()"
+          >
+          <label for="input-check" class="button-check">
+            <span></span>
+          </label>
+
+          <div id="menu-lateral" class="menu effect1">
+            <nav id="conteudo-menuLa">
+              <h1 class="Premium">Premium</h1>
+              <h2 class="Suporte">Suporte</h2>
+              <h3 class="Baixar">Baixar</h3>
+              <div class="line-menuLA"></div>
+              <h4 class="Inscrever">Inscrever-se</h4>
+              <h5 class="Entrar">Entrar</h5>
+              <img id="logo_spotifyMENU" src="asset/imagens/Spotify_Logo_RGB_White.png" alt="SPOTIFY" >
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <section id="anuncio">
+
+      <div class="conteudoAnuncio">
+        <h2 id="tittle-anuncio">Aproveite 1 mês grátis de Premium</h2>
+        <h2 id="warning-anuncio">Depois, pague somente R$ 19,90/mês. Cancele quando quiser.</h2>
+
+        <div class="buttons">
+          <button type="button" id="comecar">COMEÇAR</button>
+          <button type="button" id="ver-planos">VER PLANOS</button>
+        </div>
+
+        <div class="span-Anuncio">
+          <span id="frase-an"><a id="link-frase-an" href="#">Sujeito a Termos e Condições.</a> O mês grátis não 
+            está disponível para usuários que já experimentaram o Premium.</span>
+        </div>
+      </div>
+
+    </section>
+
+  <section id="planos">
+      <div class="Topo-planos">
+        <h1 id="tittle-planos">Escolha seu plano Premium</h1>
+        <p id="warning-planos">Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
+      </div>
+      <div id="cartoes">
+        <img id="visa" src="asset/imagens/Visa.png" alt="Visa" width="26px">
+        <img id="master" src="asset/imagens/Mastercard.png" alt="Master" width="26px">
+        <img id="amex" src="asset/imagens/Amex.png" alt="Amex" width="26px">
+        <img id="elo" src="asset/imagens/elo.png" alt="elo" width="26px">
+        <img id="hiper" src="asset/imagens/hipercard.png" alt="hiper" width="26px">
+        <a href="#" id="opcoes">+ outros 11</a>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3">
+          <div id="card-one">
+            <div id="cardOne-partOne-planos">
+              <p id="card-part1-frase">1 mês grátis ao assinar</p>
+              <p id="card-part1-frase2">Pagamento único disponível</p>
+              <h3 id="tittle-card-part1">Individual</h3>
+              <p id="card-part1-frase3">R$ 19,90/mês após o período da oferta</p>
+              <span id="Conta1-card1">1 conta</span>
+              <div id="line-card1"></div>
+        </div>
+
+       <div id="cardOne-part2">
+
+        <ul class="list-1">
+          <li class="listas-CardOne">
+            <img id="icons-selecionado1" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+            <p id="card-part2-frase1">Ouça músicas sem anúncios</p>
+          </li>
+          <li class="listas-CardOne">
+            <img id="icons-selecionado2" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+            <p id="card-part2-frase2">Ouça em qualquer lugar — até quando estiver offline</p>
+          </li>
+          <li class="listas-CardOne">
+            <img id="icons-selecionado3" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+            <p id="card-part2-frase3">Ouça músicas na ordem que quiser</p>
+          </li>
+          <li class="listas-CardOne">
+            <img id="icons-selecionado4" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+            <p id="card-part2-frase4">Faça um plano pré-pago ou uma assinatura</p>
+          </li>
+        </ul>
+            <button type="button" id="comecar1">COMEÇAR</button>
+            <ul class="span-CardOne">
+              <span id="card-part2-frase5"><a id="card-part2-frase5-a" href="#">Sujeito a Termos e Condições.</a> 
+                O mês grátis não está disponível para usuários que já usaram o Premium.</span>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3">
+      <div id="card-two">
+        <div id="cardTwo-partOne-planos">
+          <p id="cardTwo-part1-frase">1 mês grátis ao assinar</p>
+          <p id="cardTwo-part1-frase2">Pagamento único disponível</p>
+          <h3 id="tittle-cardTwo-part1">Duo</h3>
+          <p id="cardTwo-part1-frase3">R$ 24,90/mês após o período da oferta</p>
+          <span id="Conta1-card2">2 contas</span>
+          <div id="line-card2"></div>
+        </div>
+        <div id="cardTwo-part2">
+          <ul class="list-2">
+            <li class="listas-CardTwo">
+              <img id="icons2-selecionado1" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardTwo-part2-frase1">2 contas Premium para pessoas que moram juntas</p>
+            </li>
+
+            <li class="listas-CardTwo">
+              <img id="icons2-selecionado2" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardTwo-part2-frase2">Música sem anúncios, no modo offline e na ordem que você quiser</p>
+            </li>
+
+            <li class="listas-CardTwo">
+              <img id="icons2-selecionado3" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardTwo-part2-frase3">Faça um plano pré-pago ou uma assinatura</p>
+            </li>
+          </ul>
+          <button type="button" id="comecar2">COMEÇAR</button>
+          <ul class="span-CardTwo">
+          <span id="cardTwo-part2-frase5"><a id="cardTwo-part2-frase5-a" href="#">Sujeito a Termos e Condições.</a> 
+            O mês grátis não está disponível para usuários que já usaram o Premium.</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3">
+      <div id="card-three">
+        <div id="cardthree-partOne-planos">
+          <p id="cardthree-part1-frase">1 mês grátis ao assinar</p>
+          <p id="cardthree-part1-frase2">Pagamento único disponível</p>
+          <h3 id="tittle-cardthree-part1">Família</h3>
+          <p id="cardthree-part1-frase3">R$ 34,90/mês após o período da oferta</p>
+          <span id="Conta1-card3">Até 6 contas</span>
+          <div id="line-card3"></div>
+        </div>
+        <div id="cardthree-part2">
+          <ul class="list-3">
+            <li class="lista-CardThree"> 
+              <img id="icons3-selecionado1" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardthree-part2-frase1">6 contas Premium para familiares que moram no mesmo endereço</p>
+            </li>
+            <li class="lista-CardThree">
+              <img id="icons3-selecionado2" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardthree-part2-frase2">Bloqueie músicas com conteúdo explícito</p>
+            </li>
+            <li class="lista-CardThree">
+              <img id="icons3-selecionado3" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardthree-part2-frase3">Música sem anúncios, no modo offline e na ordem que você quiser</p>
+            </li>
+            <li class="lista-CardThree">
+              <img id="icons3-selecionado4" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+            <p id="cardthree-part2-frase4">Spotify Kids: um app separado, feito especialmente para crianças</p>
+            </li>
+            <li class="lista-CardThree">
+              <img id="icons3-selecionado5" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardthree-part2-frase5">Faça um plano pré-pago ou uma assinatura</p>
+            </li>
+          </ul>
+          <button type="button" id="comecar3">COMEÇAR</button>
+          <ul class="span-CardThree">
+          <span id="cardthree-part2-frase6"><a id="cardthree-part2-frase6-a" href="#">Sujeito a Termos e Condições.</a> 
+            O mês grátis não está disponível para usuários que já usaram o Premium.</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3">
+      <div id="card-four">
+        <div id="cardfour-partOne-planos">
+          <p id="cardfour-part1-frase">1 mês grátis ao assinar</p>
+          <p id="cardfour-part1-frase2">Pagamento único disponível</p>
+          <h3 id="tittle-cardfour-part1">Universitário</h3>
+          <p id="cardfour-part1-frase3">R$ 9,90/mês após o período da <br> oferta</p>
+          <span id="Conta1-card4">1 conta</span>
+          <div id="line-card4"></div>
+        </div>
+
+        <div id="cardfour-part2">
+          <ul class="list-4">
+            <li class="lista-CardFour">
+              <img id="icons4-selecionado1" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardfour-part2-frase1">Desconto especial para estudantes universitários elegíveis</p>
+            </li>
+            <li class="lista-CardFour">
+              <img id="icons4-selecionado2" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardfour-part2-frase2">Ouça músicas sem anúncios</p>
+            </li>
+            <li class="lista-CardFour">
+              <img id="icons4-selecionado3" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardfour-part2-frase3">Ouça em qualquer lugar — até quando estiver offline</p>
+            </li>
+            <li class="lista-CardFour">
+              <img id="icons4-selecionado4" src="https://img.icons8.com/ios/50/null/checkmark--v1.png"/>
+              <p id="cardfour-part2-frase4">Ouça músicas na ordem que quiser</p>
+            </li>
+          </ul>
+
+          <button type="button" id="comecar4">COMEÇAR</button>
+          <ul class="span-CardFour">
+          <span id="cardfour-part2-frase6"> 
+            Oferta disponível somente para estudantes de instituições de ensino superior credenciadas. 
+            O mês grátis não está disponível para usuários que já experimentaram o Premium.
+            <a id="cardfour-part2-frase6-a" href="#">Sujeito aos Termos e Condições.</a> 
+            da oferta do Spotify de desconto para universitários.</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>    
+    <footer>
+      <div class="container" id="Footer-lists">
+        <div class="row"> 
+          <div class="col-lg-2">
+            <img id="footer-logo_spotify" src="asset/imagens/Spotify_Logo_RGB_White.png" alt="SPOTIFY" width="150px">  
+          </div>
+    
+          <div class="col-sm-2">
+            <div id="coluna-1">
+              <h5 id="tittle-colu-1">EMPRESA</h5>
+              <nav id="footer-colu1-nav">
+                <p id="footer-frase1">Sobre</p>
+                <p id="footer-frase2">Empregos</p>
+                <p id="footer-frase3">For the Record</p>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div id="coluna-2">
+              <h5 id="tittle-colu-2">COMUNIDADES</h5>
+              <nav id="footer-colu2-nav">
+                <p id="footer-frase4">Para Artistas</p>
+                <p id="footer-frase5">Desenvolvedores</p>
+                <p id="footer-frase6">Publicidade</p>
+                <p id="footer-frase7">Investidores</p>
+                <p id="footer-frase8">Fornecedores</p>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div id="coluna-3">
+              <h5 id="tittle-colu-3">LINKS ÚTEIS</h5>
+              <nav id="footer-colu3-nav">
+                <p id="footer-frase9">Suporte</p>
+                <p id="footer-frase10">Player da Web</p>
+                <p id="footer-frase11">Aplicativo móvel grátis</p>
+              </nav>
+            </div>
+          </div>
+      </div> 
+    </div> 
+
+  <div id="SVGS">
+        <svg id="instagram-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="55"
+        viewBox="0 0 48 48">
+        <path id="fill1" d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z" fill="#dddddd"></path>
+        </svg>
+        
+        <svg id="twitter-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="53" 
+        viewBox="0 0 30 30">
+        <path id="fill2" d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z" fill="#dddddd"></path>
+        </svg>
+
+        <svg id="facebook-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="50"
+        viewBox="0 0 50 50">
+        <path id="fill3" d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z" fill="#dddddd"></path>
+        </svg>
+    </div>
+    
+    <div id="politicas">
+
+      <a id="Legal" href="#">Legal</a>
+      <a id="CDP" href="#">Centro de Privacidade</a>
+      <a id="PDP" href="#">Política de privacidade</a>
+      <a id="cookies" href="#">Cookies</a>
+      <a id="sobreA" href="#">Sobre anúncios</a>
+
+    </div>
+
+    <p id="cer-spo">© 2023 Spotify AB</p>
+    
+  <ul id="Word-Brasil">
+    <img id="world" src="asset/imagens/world.svg" alt="sda">
+    <p id="brasil">Brasil</p>
+  </ul>
+
+
+</footer>
+
+
+<script src="style.js"></script>
+
+</body>
+</html>
