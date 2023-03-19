@@ -241,6 +241,7 @@ body{
     border: 2px solid #ffffff;
     cursor: pointer;
     transition: all 0.2s;
+    text-decoration: none;
 }
 #ver-planos:hover{
     background: #1a69c7;
@@ -1247,8 +1248,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 65%;
-        top: 0rem;
+        left: 65.5%;
+        top: 1rem;
     }
     #SVGS{
         display: inline-block;
@@ -1351,8 +1352,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 65.8%;
+        top: 6.5rem;
     }
     #SVGS{
         display: inline-block;
@@ -1403,8 +1404,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 65.8%;
+        top: 6.3rem;
     }
     #cartoes{
         position: relative;
@@ -1465,8 +1466,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 65.5%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -1522,8 +1523,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 65%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -1579,8 +1580,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 65%;
+        top: 6.3rem;
     }  
     #SVGS{
         display: inline-block;
@@ -1636,8 +1637,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 65%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -1693,8 +1694,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 71.3%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -1750,8 +1751,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 71%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -1807,8 +1808,8 @@ footer{
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 71%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -1859,13 +1860,13 @@ footer{
     #cer-spo{
         position: relative;
         top: 128px;
-        left: 82%;
+        left: 78%;
     }
     #Word-Brasil{
         display: inline-block;
         position: relative;
-        left: 66.3%;
-        top: 5.3rem;
+        left: 71%;
+        top: 6.3rem;
     }
     #SVGS{
         display: inline-block;
@@ -3219,7 +3220,7 @@ footer{
 @media(max-width: 450px){
     .conteudoAnuncio{
         display: inline-block;
-        background-color: red;
+        background-color: transparent;
         width: 400px;
         height: 280px;
         position: relative;
@@ -5219,7 +5220,7 @@ footer{
 @media(max-width: 322px){
     .conteudoAnuncio{
         display: inline-block;
-        background-color: red;
+        background-color: transparent;
         width: 300px;
         height: 280px;
         position: relative;
